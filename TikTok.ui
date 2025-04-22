@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyTikTok</class>
+ <widget class="QWidget" name="MyTikTok">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>抖音-记录美好生活</string>
+  </property>
+  <widget class="QLabel" name="lbLogo">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>10</y>
+     <width>201</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="leInterestKey">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>50</y>
+     <width>551</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>输入您感兴趣的内容</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="spSearch">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>50</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>搜索</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pbCurrentUser">
+   <property name="geometry">
+    <rect>
+     <x>1070</x>
+     <y>30</y>
+     <width>61</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>110</y>
+     <width>1121</width>
+     <height>671</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::West</enum>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="widget">
+    <attribute name="title">
+     <string/>
+    </attribute>
+    <widget class="QGraphicsView" name="gvWatchOnline">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>5</y>
+       <width>1061</width>
+       <height>626</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="tbwFocusUsers">
+     <property name="geometry">
+      <rect>
+       <x>935</x>
+       <y>5</y>
+       <width>131</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+    </widget>
+    <widget class="QPushButton" name="pbPrev">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>460</y>
+       <width>31</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pbNext">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>540</y>
+       <width>31</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pbFocus">
+     <property name="geometry">
+      <rect>
+       <x>935</x>
+       <y>370</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pbLike">
+     <property name="geometry">
+      <rect>
+       <x>935</x>
+       <y>450</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>点赞</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pbComment">
+     <property name="geometry">
+      <rect>
+       <x>935</x>
+       <y>510</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>评论</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbDuration">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>635</y>
+       <width>121</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>00:00/00:00</string>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QSlider" name="hsPosition">
+     <property name="geometry">
+      <rect>
+       <x>115</x>
+       <y>639</y>
+       <width>811</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pbDanmaku">
+     <property name="geometry">
+      <rect>
+       <x>940</x>
+       <y>634</y>
+       <width>55</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>弹幕</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pbFullScreen">
+     <property name="geometry">
+      <rect>
+       <x>1035</x>
+       <y>634</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>全屏</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>页</string>
+    </attribute>
+    <widget class="QGraphicsView" name="gvVideoClip">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>5</y>
+       <width>941</width>
+       <height>611</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pbOpen">
+     <property name="geometry">
+      <rect>
+       <x>955</x>
+       <y>5</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>打开</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pbClose">
+     <property name="geometry">
+      <rect>
+       <x>955</x>
+       <y>50</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>关闭</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pbEdit">
+     <property name="geometry">
+      <rect>
+       <x>955</x>
+       <y>170</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>编辑</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pbProc">
+     <property name="geometry">
+      <rect>
+       <x>955</x>
+       <y>215</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>处理</string>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="pgbUpload">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>625</y>
+       <width>941</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+     <property name="textVisible">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="cbPublic">
+     <property name="geometry">
+      <rect>
+       <x>955</x>
+       <y>589</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>公开</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pbUpload">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>955</x>
+       <y>616</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>上传</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <attribute name="title">
+     <string>Tab 2</string>
+    </attribute>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

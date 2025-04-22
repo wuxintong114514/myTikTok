@@ -1,0 +1,11 @@
+debug/commentdialog.o
+debug/graphicsdanmakutextitem.o
+debug/graphicsthread.o
+debug/main.o
+debug/TikTok.o
+debug/uploaddialog.o
+debug/moc_TikTok.o
+debug/moc_commentdialog.o
+debug/moc_graphicsdanmakutextitem.o
+debug/moc_graphicsthread.o
+debug/moc_uploaddialog.o

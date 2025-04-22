@@ -1,0 +1,11 @@
+release/commentdialog.o
+release/graphicsdanmakutextitem.o
+release/graphicsthread.o
+release/main.o
+release/TikTok.o
+release/uploaddialog.o
+release/moc_TikTok.o
+release/moc_commentdialog.o
+release/moc_graphicsdanmakutextitem.o
+release/moc_graphicsthread.o
+release/moc_uploaddialog.o
